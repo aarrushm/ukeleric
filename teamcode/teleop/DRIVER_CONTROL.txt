@@ -8,11 +8,11 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-import org.firstinspires.ftc.teamcode.autonomous.HuskyLenses;
+import org.firstinspires.ftc.teamcode.parts.HuskyLenses;
 import org.firstinspires.ftc.teamcode.autonomous.IntakeClaw;
 import org.firstinspires.ftc.teamcode.autonomous.Motors;
-import org.firstinspires.ftc.teamcode.autonomous.Servos;
-import org.firstinspires.ftc.teamcode.autonomous.Slides;
+import org.firstinspires.ftc.teamcode.parts.Servos;
+import org.firstinspires.ftc.teamcode.parts.Slides;
 import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
 
 @TeleOp(name="DRIVER CONTROL", group="Linear Opmode") // @Autonomous(...) is the other common choice

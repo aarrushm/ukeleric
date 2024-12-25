@@ -1,10 +1,12 @@
 package org.firstinspires.ftc.teamcode.pedroPathing.localization.localizers;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @com.qualcomm.robotcore.eventloop.opmode.TeleOp(name="Encoder Telemetry with Movement", group="Telemetry")
+@Disabled
 public class EncoderTelemetry extends OpMode {
 
     // Motor declarations
