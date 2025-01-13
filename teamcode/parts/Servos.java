@@ -15,6 +15,8 @@ public class Servos {
         servo.setPosition(MAX_POS);
     }
 
+    public double getPosition() { return servo.getPosition(); }
+
     public void moveToMin() { servo.setPosition(MIN_POS); }
 
     public void moveSpecificPos(double pos) { servo.setPosition(pos); }

@@ -3,26 +3,23 @@ package org.firstinspires.ftc.teamcode.parts;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class Claw {
-    public Servos left;
-    public Servos right;
+    public Servos claw;
 
     public Claw(HardwareMap hw) {
-        left = new Servos(hw, "left");
-        right = new Servos(hw, "right");
+        claw = new Servos(hw, "claw");
     }
 
     public void closeClaw() {
-        left.moveToMax();
-        right.moveToMax();
+        claw.moveToMin();
     }
 
     public void openClaw() {
-        left.moveToMin();
-        right.moveToMin();
+        claw.moveToMax();
     }
 
+    public double getPosition() { return claw.getPosition(); }
+
     public void moveClawToSpecificPos(double pos) {
-        left.moveSpecificPos(pos);
-        right.moveSpecificPos(pos);
+        claw.moveSpecificPos(pos);
     }
 }
